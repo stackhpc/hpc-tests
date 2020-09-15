@@ -100,6 +100,8 @@ site_configuration = {
         },
         {
             'name':'alaska',
+            # Changelist for non-reframe changes:
+            # - 10-09-20: C-states disabled
             'descr':'Default AlaSKA OpenHPC p3-appliances slurm cluster',
             'hostnames': ['openhpc-login-0', 'openhpc-compute'],
             'modules_system':'lmod',
@@ -138,10 +140,12 @@ site_configuration = {
                     'scheduler': 'slurm',
                     'launcher':'srun',
                     'max_jobs':8,
-                    'environs':['imb', 'omb', 'gromacs', 'openfoam', 'cp2k', 'hpl'],
+                    'environs':['imb', 'omb', 'gromacs', 'openfoam', 'cp2k', 'hpl', 'sysinfo'],
                     'modules': ['gcc/9.3.0-5abm3xg', 'openmpi/4.0.3-qpsxmnc'],
                     'variables': [
                         ['SLURM_MPI_TYPE', 'pmix_v2'],
+                        # force IB:
+                        ['UCX_NET_DEVICES', 'mlx5_0:1'],
                     ]
                 },
                 {
@@ -241,7 +245,7 @@ site_configuration = {
         {
             'name': 'intel-hpl',
             'target_systems': ['alaska:ib-gcc9-impi-verbs', 'alaska:roce-gcc9-impi-verbs'],
-            'modules': ['intel-mkl/2020.1.217-5tpgp7b'],
+            'modules': ['intel-mkl/2020.1.217-5tpgp7b'], # now installed
             'variables':[
                 ['PATH', '$PATH:$MKLROOT/benchmarks/mp_linpack/'], # MKLROOT provided by mkl module
             ],
@@ -284,6 +288,13 @@ site_configuration = {
             'name':'cp2k',
             'target_systems': ['arcus:ib-foss-2019a', 'arcus:roce-foss-2019a'],
             'modules': ['CP2K/6.1-foss-2019a']
+        },
+        {
+            'name': 'sysinfo',
+        },
+        {
+            'name': 'sysinfo',
+            'target_systems': ['alaska:ib-gcc9-openmpi4-ucx'] #, 'alaska:roce-gcc9-openmpi4-ucx'],
         }
     ],
     'logging': [
