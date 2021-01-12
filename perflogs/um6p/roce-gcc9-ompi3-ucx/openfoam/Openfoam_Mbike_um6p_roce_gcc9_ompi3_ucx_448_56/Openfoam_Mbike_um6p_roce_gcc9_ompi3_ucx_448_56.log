@@ -1,0 +1,3 @@
+2020-12-16T17:34:33+00:00|reframe 3.4-dev1 (rev: 0a6e58f0)|Openfoam_Mbike_um6p_roce_gcc9_ompi3_ucx_448_56 on um6p:roce-gcc9-ompi3-ucx using openfoam|jobid=112920|ExecutionTime=10.68|s|ref=0 (l=null, u=null)|num_procs=448,num_nodes=8
+2020-12-16T17:34:33+00:00|reframe 3.4-dev1 (rev: 0a6e58f0)|Openfoam_Mbike_um6p_roce_gcc9_ompi3_ucx_448_56 on um6p:roce-gcc9-ompi3-ucx using openfoam|jobid=112920|ClockTime=11.0|s|ref=0 (l=null, u=null)|num_procs=448,num_nodes=8
+2020-12-16T17:34:33+00:00|reframe 3.4-dev1 (rev: 0a6e58f0)|Openfoam_Mbike_um6p_roce_gcc9_ompi3_ucx_448_56 on um6p:roce-gcc9-ompi3-ucx using openfoam|jobid=112920|runtime_real=19.472|s|ref=0 (l=null, u=null)|num_procs=448,num_nodes=8

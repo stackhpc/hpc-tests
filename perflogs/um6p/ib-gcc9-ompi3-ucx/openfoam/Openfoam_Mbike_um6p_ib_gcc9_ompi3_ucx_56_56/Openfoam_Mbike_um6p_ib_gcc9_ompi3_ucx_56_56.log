@@ -1,0 +1,3 @@
+2020-12-16T17:33:29+00:00|reframe 3.4-dev1 (rev: 0a6e58f0)|Openfoam_Mbike_um6p_ib_gcc9_ompi3_ucx_56_56 on um6p:ib-gcc9-ompi3-ucx using openfoam|jobid=112910|ExecutionTime=36.6|s|ref=0 (l=null, u=null)|num_nodes=1,num_procs=56
+2020-12-16T17:33:29+00:00|reframe 3.4-dev1 (rev: 0a6e58f0)|Openfoam_Mbike_um6p_ib_gcc9_ompi3_ucx_56_56 on um6p:ib-gcc9-ompi3-ucx using openfoam|jobid=112910|ClockTime=38.0|s|ref=0 (l=null, u=null)|num_nodes=1,num_procs=56
+2020-12-16T17:33:29+00:00|reframe 3.4-dev1 (rev: 0a6e58f0)|Openfoam_Mbike_um6p_ib_gcc9_ompi3_ucx_56_56 on um6p:ib-gcc9-ompi3-ucx using openfoam|jobid=112910|runtime_real=44.63|s|ref=0 (l=null, u=null)|num_nodes=1,num_procs=56
