@@ -23,7 +23,7 @@ For more information on the actual tests defined and how to run them see the REA
 
 The [ReFrame](https://reframe-hpc.readthedocs.io/en/latest/index.html) framework is used to define tests in a portable fashion in the `reframe_<application>.py` file in each application directory.
 
-Results are compared and plotted using [juypter notebooks](https://jupyter.readthedocs.io/en/latest/), with a `<application>.ipynb` file in each application directory.
+Results are compared and plotted using [jupyter notebooks](https://jupyter.readthedocs.io/en/latest/), with a `<application>.ipynb` file in each application directory.
 
 This package does not automate build/install of the benchmarked applications themselves for your system. This allows it to be used to assess performance of current system application installs, custom builds, or for performance comparisons between different builds. However, for each benchmark installation instructions are provided using OpenHPC-provided packages (where relevant) and/or [Spack](https://spack.readthedocs.io/) (which does not require root).
 
